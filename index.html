@@ -7,9 +7,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>My Library!</h1>
-    <div class="card-container">
+    <div class="page" id="heading">
+        <h1 id="headingText">My Library</h1>
     </div>
+    <div class="card-container" id="main-container">
+        <div id="form">
+            <div id="InputForm">
+                <div id="formHeading">
+                    Add Book Details
+                    <button id="closeButton">&times;</button>
+                </div>
+                <form id="bookForm">
+                    <div id="inputs">
+                    <input type="text" id="bookName" name="bookName" placeholder="Book Name" required>
+                    <input type="text" id="author" name="author" placeholder="Author" required>
+                    <input type="text" id="language" name="language" placeholder="Language" required>
+                    <input type="number" id="pages" name="pages" placeholder="Number of Pages" required>
+                </div>
+                    <button id="saveButton" type="submit">Save</button>
+                </form>
+            </div>
+        </div>
+        <div class="page box">
+            <div class="innerBox" id="innerBox">
+                <div id="addBook" class="book">
+                    <button id="addBookButton">Add Book</button>
+                    <button id="clearBookButton">Clear All Books</button>
+                </div>
+            </div>
+        </div>
+    
+    
+</div>
+    <!-- <div id="blurOverlay"></div> -->
     <script src="script.js"></script>
 </body>
 </html>
